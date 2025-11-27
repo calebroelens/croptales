@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=4 uid="uid://nipdr2o8qie8"]
+[gd_scene load_steps=5 format=4 uid="uid://nipdr2o8qie8"]
 
+[ext_resource type="PackedScene" uid="uid://bq6ip2y2covyf" path="res://scenes/components/day_night_cycle_component.tscn" id="1_51cab"]
 [ext_resource type="TileSet" uid="uid://c2hkg1i633wdh" path="res://tilesets/game_tileset.tres" id="1_cfcal"]
 [ext_resource type="PackedScene" uid="uid://bg0tovcdpjwe" path="res://scenes/characters/player/player.tscn" id="2_51cab"]
 [ext_resource type="PackedScene" uid="uid://bjmr0kkjjt2f5" path="res://scenes/ui/game_screen.tscn" id="3_rf13p"]
 
 [node name="TestSceneDayNightCycle" type="Node2D"]
+
+[node name="DayNightCycleComponent" parent="." instance=ExtResource("1_51cab")]
 
 [node name="GameTileMap" type="Node2D" parent="."]
 
